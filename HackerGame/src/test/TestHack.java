@@ -3,7 +3,7 @@ package test;
 import junit.framework.TestCase;
 import model.Control;
 
-public class TestTrip extends TestCase {
+public class TestHack extends TestCase {
 
     private Control control;
 
@@ -73,7 +73,7 @@ public class TestTrip extends TestCase {
         control.getGrafoM().addEdge(2,1,2);
         control.getGrafoM().addEdge(1,3,2);
 
-        assertEquals(control.proveFinish(2,0,2),"Good you still can hacking the President" );
+        assertEquals(control.proveFinish(2,0,2),"you can hacking the president" );
         assertEquals(control.proveFinish(2,1,2),"No, sorry hacker you need to back to another net " );
         assertEquals(control.proveFinish(2,3, 0),"No, sorry hacker you need to back to another net " );
     }
